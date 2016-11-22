@@ -1,0 +1,12 @@
+appConfig:
+    appName: azra
+
+
+logging:
+    path: logs
+    level:
+        hello: DEBUG
+        hello: WARN
+
+jms:
+    defaultBrokerUrl: tcp://localhost:61616

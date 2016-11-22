@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd"
+        >
+
+    <!--<bean id="jmxDemo" class="org.synyx.urlaubsverwaltung.jmx.JmxDemo">-->
+        <!--&lt;!&ndash; maybe you need contructor-injection &ndash;&gt;-->
+        <!--&lt;!&ndash; <constructor-arg ref="myService" /> &ndash;&gt;-->
+    <!--</bean>-->
+
+            <!--&lt;!&ndash; you may just copy the following lines &ndash;&gt;-->
+    <!--<bean id="exporter" class="org.springframework.jmx.export.MBeanExporter" lazy-init="false">-->
+        <!--<property name="autodetect" value="true" />-->
+        <!--<property name="namingStrategy" ref="namingStrategy" />-->
+        <!--<property name="assembler" ref="assembler" />-->
+    <!--</bean>-->
+
+    <!--<bean id="jmxAttributeSource" class="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" />-->
+
+    <!--<bean id="assembler" class="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler">-->
+        <!--<property name="attributeSource" ref="jmxAttributeSource" />-->
+    <!--</bean>-->
+
+    <!--<bean id="namingStrategy" class="org.springframework.jmx.export.naming.MetadataNamingStrategy">-->
+        <!--<property name="attributeSource" ref="jmxAttributeSource" />-->
+    <!--</bean>-->
+
+</beans>

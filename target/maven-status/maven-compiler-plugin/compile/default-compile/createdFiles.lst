@@ -1,0 +1,5 @@
+hello/Application.class
+hello/data/Item.class
+hello/WebSecurityConfig.class
+hello/MvcConfig.class
+hello/data/config/ApplicationConfigurationProperties.class

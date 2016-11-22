@@ -1,0 +1,9 @@
+appConfig:
+    appName: azra
+
+
+logging:
+    path: logs
+    level:
+        com.paypal: DEBUG
+        com.paypal.breadboard: WARN

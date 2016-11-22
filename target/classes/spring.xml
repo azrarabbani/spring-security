@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd"
+        >
+
+
+    <!-- ============================================================= -->
+    <!-- Import resources -->
+    <!-- ============================================================= -->
+    <import resource="classpath:config/com/hello/jmx/jmxcontext.xml" />
+
+
+
+    <!-- ============================================================= -->
+    <!-- Config Objects -->
+    <!-- ============================================================= -->
+    <!--<bean-->
+            <!--id="breadboardModuleConfigurationProperties"-->
+            <!--class="com.BreadboardModuleConfigurationProperties"-->
+            <!--/>-->
+    <!--<bean-->
+            <!--id="haeConfigurationProperties"-->
+            <!--class="com.config.HaeConfigurationProperties"/>-->
+    <!--<bean-->
+            <!--id="eventsClientConfigurationProperties"-->
+            <!--class="com.config.EventsClientConfigurationProperties"/>-->
+
+
+
+    <!-- ============================================================= -->
+    <!-- Database Client Objects -->
+    <!-- ============================================================= -->
+    <!--<bean id="c3p0DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"-->
+          <!--destroy-method="close">-->
+        <!--<property name="driverClass" value="com.mysql.jdbc.Driver" />-->
+        <!--<property name="jdbcUrl" value="#{systemProperties.dbhost}" />-->
+        <!--<property name="user" value="#{systemProperties.dbuser}" />-->
+        <!--<property name="password" value="#{systemProperties.dbpass}" />-->
+        <!--<property name="maxPoolSize" value="25" />-->
+        <!--<property name="minPoolSize" value="10" />-->
+        <!--<property name="maxStatements" value="100" />-->
+        <!--<property name="testConnectionOnCheckout" value="true" />-->
+    <!--</bean>-->
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<constructor-arg ref="c3p0DataSource" />-->
+    <!--</bean>-->
+    <!--<bean id="simpleJdbcInsert"-->
+          <!--class="org.springframework.jdbc.core.simple.SimpleJdbcInsert"-->
+          <!--scope="prototype">-->
+        <!--<constructor-arg ref="jdbcTemplate" />-->
+    <!--</bean>-->
+
+</beans>
